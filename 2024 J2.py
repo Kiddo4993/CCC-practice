@@ -1,12 +1,13 @@
-D = int(input())
-total = D
 
-while True: 
-    y = int(input())
+dusa_size = int(input().strip())
 
+import sys
+
+for line in sys.stdin:
+    yobi = int(line.strip())
     
-
-    if total > y:
-        total += y
+    if yobi < dusa_size:
+        dusa_size += yobi  
     else:
-        print(total)
+        break  
+print(dusa_size)

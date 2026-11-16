@@ -1,3 +1,5 @@
+# CCC cheat sheet: input patterns and common snippets (not a runnable solution).
+
 n = int(input())
 r, c = map(int, input().split())
 arr = list(map(int, input().split()))
@@ -34,6 +36,7 @@ for k, v in d.items():
     print(k, v)
 
 if key in d:
+    print(d[key])
 
 s = set()
 s.add(5)
@@ -41,6 +44,7 @@ s.add(5)
 arr = list(set(arr))
 
 if x in s:
+    print("found", x)
 
 from collections import Counter
 
@@ -82,13 +86,6 @@ for r in range(R):
         if not visited[r][c]:
             dfs(r, c)
             components += 1
-
-from collections import defaultdict
-
-d = defaultdict(int)
-
-for x in arr:
-    d[x] += 1
 
 from collections import defaultdict
 
